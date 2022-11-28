@@ -1,0 +1,21 @@
+<div class="bg-gray-100 w-screen h-screen">
+    <header>
+        <nav class="flex justify-between border-b border-gray-300 px-6 py-4 bg-white">
+            <div class="flex">
+                <div class="transition duration-150 ease-in-out transform hover:scale-110 block font-bold text-3xl">
+                    <a [routerLink]="['/']">Wardrobe</a>
+                </div>
+            </div>
+            <div class="flex text-center items-center">
+                <a [routerLink]="['/login']" class="uppercase tracking-widest">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="p-8">
+        <router-outlet></router-outlet>
+    </main>
+
+    <footer>
+    </footer>
+</div>
